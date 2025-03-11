@@ -3,8 +3,8 @@ const fs = require("fs");
 const path = require("path");
 const { stringify } = require("querystring");
 
-const saveTo = "/home/asher/Music/test/";
-const loadFrom = "/home/asher/S2CMP/mods/";
+const saveTo = "/path/to/folder/";
+const loadFrom = "/path/to/folder/";
 let amount = 0;
 function extractor(zip, path, saveTo, temp) {
     zip.extractEntryTo(path, saveTo + temp, false, true);
