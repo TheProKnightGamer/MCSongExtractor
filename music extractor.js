@@ -2,9 +2,10 @@ const AdmZip = require("adm-zip");
 const fs = require("fs");
 const path = require("path");
 const { stringify } = require("querystring");
-
+//Args for script:
 const saveTo = "/path/to/folder/";
 const loadFrom = "/path/to/folder/";
+
 let amount = 0;
 function extractor(zip, path, saveTo, temp) {
     zip.extractEntryTo(path, saveTo + temp, false, true);
